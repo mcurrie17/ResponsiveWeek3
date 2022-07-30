@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #354649;
+  --secondary-color: #a3c6c4;
+  --tertiary-color: #e0e7e9;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin-top: 100px;
+  background-color: var(--tertiary-color);
+  font-family: Karla, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+  color: var(--primary-color);
+}
+h1.aboutMe {
+  font-size: 50px;
+}
+h2 {
+  font-size: 50px;
+}
+h2.apps {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+hr {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+img.hey {
+  vertical-align: unset;
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--tertiary-color);
+}
+
+.primary-link:hover {
+  color: var(--primary-color);
+  background-color: var(--teritary-color);
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.secondary-link:hover {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
