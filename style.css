@@ -11,6 +11,10 @@ body {
   font-family: Karla, sans-serif;
 }
 
+.workImage {
+  box-shadow: var(--box-shadow);
+}
+
 h1,
 h2,
 h3 {
@@ -21,14 +25,15 @@ h1 {
   font-size: 96px;
   color: var(--primary-color);
 }
-h1.aboutMe {
-  font-size: 50px;
+h1.aboutMe,
+h1.myWork {
+  font-size: 60px;
 }
 h2 {
   font-size: 50px;
 }
 h2.apps {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 h3 {
@@ -124,19 +129,24 @@ img.hey {
   padding: 0px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .primary-link {
+    margin: 0 auto;
     display: block;
     padding: 10px 5px;
     font-size: 12px;
     text-align: center;
+    width: 70%;
   }
   h2.apps {
     font-size: 20px;
     text-align: center;
   }
-  p.myWork {
+  .myWorkColumn p {
     font-size: 16px;
+  }
+  .myWorkColumn {
+    width: 100%;
   }
   h1.aboutMe {
     font-size: 45px;
@@ -146,6 +156,9 @@ img.hey {
   }
   h1.myWork {
     font-size: 40px;
+  }
+  .myWorkCol {
+    width: 100%;
   }
 }
 
