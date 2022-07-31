@@ -1,133 +1,110 @@
 :root {
   --primary-color: #354649;
-  --secondary-color: #a3c6c4;
-  --tertiary-color: #e0e7e9;
+  --secondary-color: #e0e7e9;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin-top: 100px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   font-family: Karla, sans-serif;
 }
 
-.workImage {
-  box-shadow: var(--box-shadow);
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 96px;
-  color: var(--primary-color);
-}
-h1.aboutMe,
-h1.myWork {
-  font-size: 60px;
-}
-h2 {
-  font-size: 50px;
-}
-h2.apps {
-  font-size: 35px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
 hr {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
 }
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-img.hey {
-  vertical-align: unset;
-}
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-  color: var(--primary-color);
-}
 
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: var(--tertiary-color);
-}
-
-.primary-link:hover {
-  color: var(--primary-color);
-  background-color: var(--teritary-color);
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-}
-
-.secondary-link:hover {
-  color: var(--tertiary-color);
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
 .hero-unit {
   background: var(--primary-color);
   padding: 15px;
 }
 .hero-unit h1 {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 .heroWrap {
   padding: 0px;
 }
+
+h1.aboutMe,
+h1.myWork {
+  font-size: 60px;
+}
+
+.contact-paragraphs p {
+  font-size: 20px;
+}
+
+/* index page specific */
+
+h1.index {
+  font-size: 96px;
+  color: var(--primary-color);
+}
+
+h2.index {
+  font-size: 50px;
+}
+
+h3.index {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p.index {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+img.index {
+  vertical-align: unset;
+}
+
+/* my work page specific */
+
+h2.myWork {
+  font-size: 35px;
+}
+
+img.myWork {
+  box-shadow: var(--box-shadow);
+}
+
+.myWorkLink {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+}
+
+.myWorkLink:hover {
+  color: var(--primary-color);
+  background-color: var(--teritary-color);
+}
+
+/* social links on each page */
+
+.social-links a {
+  margin: 0 18px;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+.social-links a:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border: 0.5px solid var(--primary-color);
+}
+
+/* responsive changes */
 
 @media (max-width: 576px) {
   .primary-link {
@@ -160,6 +137,9 @@ img.hey {
   .myWorkCol {
     width: 100%;
   }
+  .contact-paragraphs {
+    text-align: left;
+  }
 }
 
 @media (max-width: 768px) {
@@ -175,20 +155,4 @@ img.hey {
   h1.myWork {
     font-size: 35px;
   }
-}
-
-.social-links a {
-  margin: 0 18px;
-  padding: 10px 15px;
-  font-size: 20px;
-  color: var(--tertiary-color);
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  border: 1px solid var(--primary-color);
-  transition: all 100ms ease-in-out;
-}
-.social-links a:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-  border: 0.5px solid var(--primary-color);
 }
